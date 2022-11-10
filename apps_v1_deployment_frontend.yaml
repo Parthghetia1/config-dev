@@ -37,7 +37,7 @@ spec:
           value: adservice:9555
         - name: ENABLE_PROFILER
           value: "0"
-        image: frontend
+        image: gcr.io/dev-anthos-online-boutique/frontend@sha256:782cee10b929ad944cdc8b4c070d1a94c63c88b3591366443ae1115521df0e94
         livenessProbe:
           httpGet:
             httpHeaders:
@@ -71,7 +71,6 @@ spec:
             - all
           privileged: false
           readOnlyRootFilesystem: true
-      image: gcr.io/dev-anthos-online-boutique/frontend@sha256:ae94bc75c60f6894bc8349a70fd303a472382e1601725719bf8222119a08cc75
       securityContext:
         fsGroup: 1000
         runAsGroup: 1000
