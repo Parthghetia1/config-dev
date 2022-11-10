@@ -37,7 +37,7 @@ spec:
           value: adservice:9555
         - name: ENABLE_PROFILER
           value: "0"
-        image: gcr.io/dev-anthos-online-boutique/frontend:latest
+        image: gcr.io/dev-anthos-online-boutique/global/frontend:latest
         livenessProbe:
           httpGet:
             httpHeaders:
